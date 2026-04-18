@@ -16,8 +16,8 @@ return new class extends Migration
             $table->timestamps();
             $table->boolean('is_active')->default(true);
             $table->string('slug')->unique();
-           $table->timestamp('published_at')->nullable();
-            // memancing git untuk update
+            $table->timestamp('published_at')->nullable();
+            //set_slug
         });
     }
 
