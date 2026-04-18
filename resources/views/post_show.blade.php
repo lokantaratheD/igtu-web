@@ -9,10 +9,11 @@
         
         <div class="p-8">
             <h1 class="text-4xl font-bold mb-4">{{ $post->title }}</h1>
-            <p class="text-gray-500 mb-6 italic">Published at: {{ $post->published_at->format('d M Y') }}</p>
+    
+            <p class="text-gray-500 mb-6 italic">Published at: {{ \Carbon\Carbon::parse($post->published_at ?? $post->created_at)->format('d M Y') }}</p>
             
             <div class="prose max-w-none">
-                {!! $post->content !!} {{-- Gunakan !! jika konten berisi HTML dari text editor --}}
+                {!! $post->content !!}
             </div>
         </div>
     </article>
