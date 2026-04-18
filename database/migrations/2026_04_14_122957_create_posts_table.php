@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->boolean('is_active')->default(true);
-            $table->timestamp('published_at')->nullable();
+           $table->timestamp('published_at')->nullable();
             // memancing git untuk update
         });
     }

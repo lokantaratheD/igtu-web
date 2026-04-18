@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('publications', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->timestamp('publication_year')->nullable();
+            //check
         });
     }
 
