@@ -13,7 +13,7 @@ class DashboardService
     public function getLatestPosts(int $limit = 3)
     {
         return Post::where('is_active', true)
-                   ->latest('published_at')
+                   ->latest()
                    ->take($limit)
                    ->get();
     }
