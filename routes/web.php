@@ -58,4 +58,4 @@ Route::get('/setup-database', function () {
         return 'YAAAH ERROR: ' . $e->getMessage();
     }
 });
-Route::get('/posts/{slug}', [PostController::class, 'show'])->name('posts_show');
+Route::get('/post/{slug}', [PostController::class, 'show'])->name('post_show');

@@ -11,7 +11,7 @@ class PostController extends Controller
         // Cari postingan hanya berdasarkan slug saja
         $post = \App\Models\Post::where('slug', $slug)->firstOrFail();
 
-        return view('posts_show', compact('post'));
+        return view('post_show', compact('post'));
     }
 }
 
