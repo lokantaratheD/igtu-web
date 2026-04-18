@@ -19,6 +19,8 @@ return new class extends Migration
             $table->boolean('is_active')->default(true);
             $table->string('slug')->unique();
             $table->timestamp('published_at')->nullable();
+            $table->string('image')->nullable();
+            $table->string('content')->nullable();
             //set_slug
         });
     }
