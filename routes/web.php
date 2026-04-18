@@ -37,3 +37,22 @@ Route::get('/news', function () {
     return view('news', compact('posts'));
 });
 Route::view('/community', 'community');
+Route::get('/setup-database', function () {
+    try {
+        // 1. Force Reset Database
+        Artisan::call('migrate:fresh', ['--force' => true]);
+
+        // 2. Buat Akun Super Admin Otomatis
+        User::updateOrCreate(
+            ['email' => 'admin@igtu.com'], // Ganti email jika mau
+            [
+                'name' => 'Super Admin',
+                'password' => bcrypt('admin123') // Ini password sementaranya
+            ]
+        );
+
+        return 'Success !!';
+    } catch (\Exception $e) {
+        return 'YAAAH ERROR: ' . $e->getMessage();
+    }
+});
