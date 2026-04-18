@@ -16,6 +16,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\FileUpload;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\DatePicker;
 
 class PublicationResource extends Resource
 {
@@ -35,9 +36,10 @@ class PublicationResource extends Resource
             TextInput::make('institution')
                 ->required()
                 ->placeholder('Contoh: STFT Jakarta, UKDW, UKSW'),
-            TextInput::make('publication_year')
-                ->date()
-                ->required(),
+           DatePicker::make('publication_year')
+    ->native(false) // Menggunakan UI pemilih tanggal Filament yang lebih rapi
+    ->displayFormat('d/m/Y') // Format yang dilihat user
+    ->required(),
             TextInput::make('external_link')
                 ->url()
                 ->placeholder('https://...'),
