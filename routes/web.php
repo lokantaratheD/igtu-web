@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Models\Publication;
 use App\Models\Post;
-use App\Models\Users;
+use App\Models\User;
 
 // Rute utama (Landing Page) diarahkan ke DashboardController
 Route::get('/', [DashboardController::class, 'index'])->name('home');
