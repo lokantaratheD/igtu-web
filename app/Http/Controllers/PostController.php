@@ -13,6 +13,6 @@ class PostController extends Controller
                 ->where('is_active', true)
                 ->firstOrFail();
 
-    return view('posts_show.show', compact('post'));
+    return view('posts_show', compact('post'));
 }
 }
