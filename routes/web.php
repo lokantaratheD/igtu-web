@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Models\Publication;
 use App\Models\Post;
+use App\Models\Users;
 
 // Rute utama (Landing Page) diarahkan ke DashboardController
 Route::get('/', [DashboardController::class, 'index'])->name('home');
@@ -44,7 +45,7 @@ Route::get('/setup-database', function () {
 
         // 2. Buat Akun Super Admin Otomatis
         User::updateOrCreate(
-            ['email' => 'admin@igtu.com'], // Ganti email jika mau
+            ['email' => 'admin@gmail.com'], // Ganti email jika mau
             [
                 'name' => 'Super Admin',
                 'password' => bcrypt('admin123') // Ini password sementaranya
