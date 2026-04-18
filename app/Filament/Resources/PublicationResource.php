@@ -36,7 +36,7 @@ class PublicationResource extends Resource
                 ->required()
                 ->placeholder('Contoh: STFT Jakarta, UKDW, UKSW'),
             TextInput::make('publication_year')
-                ->numeric()
+                ->date()
                 ->required(),
             TextInput::make('external_link')
                 ->url()

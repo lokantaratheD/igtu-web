@@ -15,6 +15,12 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->timestamp('publication_year')->nullable();
+            $table-> string('title')->require();
+            $table->string('institution');
+            $table->string('author');
+            $table->string('external_link');
+            $table->string('document_file');
+            $table->string('abstract');
             //check
         });
     }
