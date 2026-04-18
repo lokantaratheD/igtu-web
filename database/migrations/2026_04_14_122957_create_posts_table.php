@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->boolean('is_active')->default(true);
+            // memancing git untuk update
         });
     }
 
