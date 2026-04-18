@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Models\Publication;
 use App\Models\Post;
 use App\Models\User;
+use App\Http\Controllers\PostController;
 
 // Rute utama (Landing Page) diarahkan ke DashboardController
 Route::get('/', [DashboardController::class, 'index'])->name('home');
@@ -57,3 +58,4 @@ Route::get('/setup-database', function () {
         return 'YAAAH ERROR: ' . $e->getMessage();
     }
 });
+Route::get('/posts/{slug}', [PostController::class, 'show'])->name('posts_show.show');
