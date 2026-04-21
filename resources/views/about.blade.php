@@ -27,40 +27,43 @@
 
         <div class="w-full lg:w-3/4 space-y-16 text-gray-700 dark:text-gray-300 leading-relaxed">
             
-            <section id="about-us" class="scroll-mt-24">
-               <h2 class="text-3xl font-bold text-blue-900 dark:text-blue-400 mb-6 border-b pb-2">
-                   {{ __('About Us: Indonesia Graduate Theological Union (IGTU)') }}
-               </h2>
-               
-               <p class="mb-4">
-                   {!! __('The <strong>Indonesia Graduate Theological Union (IGTU)</strong> is a collaborative doctoral in theology established through a formal partnership among:') !!}
-               </p>
-            
-               <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-800 dark:text-gray-200">
-                   <li>{!! __('<strong>The Association of Theological Schools in Indonesia</strong> (PERSETIA_ATSI)') !!}</li>
-                   <li>{!! __('<strong>Sekolah Tinggi Filsafat Theologi Jakarta</strong> (STFT Jakarta)') !!}</li>
-                   <li>{!! __('<strong>Universitas Kristen Duta Wacana</strong> (UKDW)') !!}</li>
-                   <li>{!! __('<strong>Universitas Kristen Satya Wacana</strong> (UKSW)') !!}</li>
-               </ul>
-            
-               <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-700 dark:text-gray-300 mb-6 bg-blue-50 dark:bg-blue-900/20 py-3 pr-3 rounded-r-lg">
-                   {!! __('IGTU is not a standalone higher education institution. Rather, it is a joint academic initiative designed to strengthen the quality, scope, and global engagement of doctoral-level theological education in Indonesia through inter-institutional collaboration.') !!}
-               </blockquote>
-            
-               <h3 class="text-xl font-semibold text-blue-800 dark:text-blue-300 mb-3">
-                   {{ __('Operational Principles') }}
-               </h3>
-               <p class="mb-6">
-                   {!! __('The consortium operates on the principle of <strong>equal partnership</strong> among its participating institutions. Academic authority—including student registration, credit recognition, supervision, and degree conferral—remains under the jurisdiction of each respective university in accordance with national higher education regulations.') !!}
-               </p>
-            
-               <h3 class="text-xl font-semibold text-blue-800 dark:text-blue-300 mb-3">
-                   {{ __('Academic Synergy') }}
-               </h3>
-               <p class="mb-4">
-                   {!! __('Doctoral degrees are conferred by the partner institutions, while IGTU provides an <strong>integrated academic framework</strong>, <strong>collaborative supervision</strong>, and an <strong>international research environment</strong> that enhances the quality and impact of doctoral studies.') !!}
-               </p>
-            /section>
+            <section id="about-us" class="scroll-mt-24 mb-12">
+            <div class="bg-white dark:bg-slate-800 rounded-lg p-6 md:p-8 shadow-sm border border-gray-100 dark:border-slate-700 space-y-8">
+                
+                <div>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                        {!! __('The <strong>Indonesia Graduate Theological Union (IGTU)</strong> is a collaborative doctoral in theology established through a formal partnership among:') !!}
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 md:ml-4">
+                        <li>{!! __('<strong>The Association of Theological Schools in Indonesia</strong> (PERSETIA_ATSI)') !!}</li>
+                        <li>{!! __('<strong>Sekolah Tinggi Filsafat Theologi Jakarta</strong> (STFT Jakarta)') !!}</li>
+                        <li>{!! __('<strong>Universitas Kristen Duta Wacana</strong> (UKDW)') !!}</li>
+                        <li>{!! __('<strong>Universitas Kristen Satya Wacana</strong> (UKSW)') !!}</li>
+                    </ul>
+                </div>
+        
+                <div class="bg-blue-50 dark:bg-slate-700/50 border-l-4 border-blue-200 dark:border-blue-500 p-5 rounded-r-md">
+                    <p class="text-gray-700 dark:text-gray-300 italic leading-relaxed">
+                        {{ __('IGTU is not a standalone higher education institution. Rather, it is a joint academic initiative designed to strengthen the quality, scope, and global engagement of doctoral-level theological education in Indonesia through inter-institutional collaboration.') }}
+                    </p>
+                </div>
+        
+                <div>
+                    <h3 class="text-xl font-bold text-blue-800 dark:text-blue-400 mb-3">{{ __('Operational Principles') }}</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                        {!! __('The consortium operates on the principle of <strong>equal partnership</strong> among its participating institutions. Academic authority—including student registration, credit recognition, supervision, and degree conferral—remains under the jurisdiction of each respective university in accordance with national higher education regulations.') !!}
+                    </p>
+                </div>
+        
+                <div>
+                    <h3 class="text-xl font-bold text-blue-800 dark:text-blue-400 mb-3">{{ __('Academic Synergy') }}</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                        {!! __('Doctoral degrees are conferred by the partner institutions, while IGTU provides an <strong>integrated academic framework</strong>, <strong>collaborative supervision</strong>, and an <strong>international research environment</strong> that enhances the quality and impact of doctoral studies.') !!}
+                    </p>
+                </div>
+        
+            </div>
+        </section>
 
             <section id="vision" class="scroll-mt-24 bg-blue-50 dark:bg-slate-800/50 p-8 rounded-2xl border border-blue-100 dark:border-slate-700">
                 <h2 class="text-3xl font-bold text-blue-900 dark:text-blue-400 mb-6">{{ __('Vision & Mission') }}</h2>
