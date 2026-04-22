@@ -30,18 +30,24 @@
             <section id="about-us" class="scroll-mt-24 mb-16">
                 <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 md:p-10 shadow-lg border border-gray-100 dark:border-slate-700">
                     
-                    <p class="text-gray-700 dark:text-gray-300 mb-4 text-lg leading-relaxed">
+                    <div class="mb-10 overflow-hidden rounded-xl shadow-sm">
+                        <img src="{{ asset('images/photo/photo_1.jpeg') }}" 
+                             alt="IGTU Formal Partnership MoU" 
+                             class="w-full h-72 object-cover hover:scale-105 transition-transform duration-700 ease-in-out">
+                    </div>
+                    
+                    <p class="text-gray-700 dark:text-gray-300 mb-6 text-lg leading-relaxed">
                         {!! __('The <strong>Indonesia Graduate Theological Union (IGTU)</strong> is a collaborative doctoral in theology established through a formal partnership among:') !!}
                     </p>
                     
-                    <ul class="list-disc list-inside pl-8 text-gray-700 dark:text-gray-300 space-y-3 text-lg marker:text-blue-600 dark:marker:text-blue-400 mb-10">
+                    <ul class="list-disc ml-8 text-gray-700 dark:text-gray-300 space-y-3 text-lg marker:text-blue-600 dark:marker:text-blue-400">
                         <li>{!! __('<strong>The Association of Theological Schools in Indonesia</strong> (PERSETIA_ATSI)') !!}</li>
                         <li>{!! __('<strong>Sekolah Tinggi Filsafat Theologi Jakarta</strong> (STFT Jakarta)') !!}</li>
                         <li>{!! __('<strong>Universitas Kristen Duta Wacana</strong> (UKDW)') !!}</li>
                         <li>{!! __('<strong>Universitas Kristen Satya Wacana</strong> (UKSW)') !!}</li>
                     </ul>
 
-                    <div class="bg-blue-50 dark:bg-slate-700/50 border-l-4 border-blue-500 p-6 md:p-8 rounded-r-xl w-full mb-10">
+                    <div class="my-10 bg-blue-50 dark:bg-slate-700/50 border-l-4 border-blue-500 p-6 md:p-8 rounded-r-xl w-full">
                         <p class="text-gray-700 dark:text-gray-300 italic text-lg leading-relaxed mb-0">
                             {{ __('IGTU is not a standalone higher education institution. Rather, it is a joint academic initiative designed to strengthen the quality, scope, and global engagement of doctoral-level theological education in Indonesia through inter-institutional collaboration.') }}
                         </p>
