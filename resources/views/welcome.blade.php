@@ -67,33 +67,41 @@
                 </div>
                 
                 <div class="bg-yellow-50 dark:bg-slate-800 p-8 rounded-xl border border-yellow-100 dark:border-slate-700 hover:shadow-lg transition">
-                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">{{ __('Doctor of Ministry (D.Min.)') }}</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-6">{{ __('An advanced professional degree for religious leaders and practitioners.') }}</p>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">{{ __('Doctor of Philosophy (Ph.D.)') }}</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">{{ __('Offers an International Ph. D program in Asia and the Pacific Theologies.') }}</p>
                     <a href="/programs" class="text-blue-600 dark:text-blue-400 font-bold hover:underline">{{ __('View details') }} &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-white py-12 border-t border-gray-200 overflow-hidden relative">
-        <div class="container mx-auto px-4 text-center mb-8">
+    <section class="bg-white py-12 border-t border-gray-100 overflow-hidden relative">
+        <div class="container mx-auto px-4 text-center mb-10">
             <h2 class="text-2xl font-bold text-slate-900">{{ __('Our Partner Institutions') }}</h2>
             <p class="text-gray-500 text-sm mt-1 font-medium">{{ __('United in theological excellence') }}</p>
         </div>
 
-        <div class="flex w-[200%] animate-marquee">
+        <div class="flex w-[200%] animate-marquee items-center">
+            
             <div class="flex items-center justify-around w-1/2 md:w-auto md:min-w-[100vw] gap-12 md:gap-24 px-12">
-                <img src="{{ asset('images/partners/persetia-logo.png') }}" alt="PERSETIA" class="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
-                <img src="{{ asset('images/partners/stft-logo.png') }}" alt="STFT Jakarta" class="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
-                <img src="{{ asset('images/partners/ukdw-logo.png') }}" alt="UKDW" class="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
-                <img src="{{ asset('images/partners/uksw-logo.png') }}" alt="UKSW" class="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
+                
+                <img src="{{ asset('images/partners/uksw-logo.png') }}" alt="UKSW" class="h-12 md:h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0 transform scale-125">
+                
+                <img src="{{ asset('images/partners/persetia-logo.png') }}" alt="PERSETIA" class="h-12 md:h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0 transform scale-[2.5]">
+                
+                <img src="{{ asset('images/partners/stft-logo.png') }}" alt="STFT Jakarta" class="h-12 md:h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0">
+
+                <img src="{{ asset('images/partners/ukdw-logo.png') }}" alt="UKDW" class="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0">
+                
             </div>
+            
             <div class="flex items-center justify-around w-1/2 md:w-auto md:min-w-[100vw] gap-12 md:gap-24 px-12">
-                <img src="{{ asset('images/partners/persetia-logo.png') }}" alt="PERSETIA" class="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
-                <img src="{{ asset('images/partners/stft-logo.png') }}" alt="STFT Jakarta" class="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
-                <img src="{{ asset('images/partners/ukdw-logo.png') }}" alt="UKDW" class="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
-                <img src="{{ asset('images/partners/uksw-logo.png') }}" alt="UKSW" class="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
+                <img src="{{ asset('images/partners/uksw-logo.png') }}" alt="UKSW" class="h-12 md:h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0 transform scale-125">
+                <img src="{{ asset('images/partners/persetia-logo.png') }}" alt="PERSETIA" class="h-12 md:h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0 transform scale-[2.5]">
+                <img src="{{ asset('images/partners/stft-logo.png') }}" alt="STFT Jakarta" class="h-12 md:h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0">
+                <img src="{{ asset('images/partners/ukdw-logo.png') }}" alt="UKDW" class="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0">
             </div>
+            
         </div>
     </section>
 @endsection

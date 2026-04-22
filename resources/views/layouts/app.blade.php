@@ -127,7 +127,7 @@
                     <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs">{{ __('Institutions') }}</h4>
                     <ul class="space-y-4 text-sm">
                         <li><a href="/partnerships" class="hover:text-blue-400 transition">{{ __('Partnerships') }}</a></li>
-                        <li><a href="https://persetia.org" target="_blank" class="hover:text-blue-400 transition">PERSETIA</a></li>
+                        <li><a href="www.persetia.or.id" target="_blank" class="hover:text-blue-400 transition">PERSETIA</a></li>
                     </ul>
                 </div>
 
